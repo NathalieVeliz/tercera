@@ -7,21 +7,62 @@
     grid-template-rows: auto;
     border: 1px solid black;
     padding: 10px 10px;
+
+    //Sobre nosotros
+
+    &__img {
+        border: 1px solid black;
+        height: 300px;
+        margin: 20px;
+    }
+
+    &__content {
+        grid-column: 1/4;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &____sobre {
+        padding: 20px;
+    }
+
+    // Servicios
+
+    &__servicios {
+        grid-column: 1/4;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px 10px 10px 10px;
+    }
+
+    &__item{
+        padding: 20px;
+    }
+
+    /*Contacto*/
+
+    &__contacto {
+        grid-column: 1/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+
+    &__itemContacto{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    //Ubicación
+
+    &__ubicacion{
+        grid-column: 1/4;
+        padding: 10px 10px;
+    }
 }
 
-.mainContainer__img {
-    border: 1px solid black;
-    height: 300px;
-}
 
 
-.mainContainer__content {
-    grid-column: 1/4;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.mainContainer__sobre {
-    padding: 20px;
-}

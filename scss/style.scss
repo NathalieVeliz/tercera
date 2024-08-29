@@ -1,7 +1,8 @@
 //base
 
-@import "base/reset";
 @import "base/vars";
+@import "base/reset";
+
 
 //componentes
 
@@ -10,8 +11,5 @@
 //layouts
 @import "layout/header";
 @import "layout/main";
-@import "layout/servicios";
-@import "layout/contacto";
-@import "layout/ubicacion";
 @import "layout/footer";
 @import "layout/mediaqueries";

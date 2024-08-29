@@ -3,19 +3,15 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Roboto", Arial, Tahoma, sans-serif;
+    font-family: $main-font;
 
 }
 
-body {
-    font-family: 'Roboto';
-    
-}
 
 h1{
-    color: #338ba7;
+    color: $color-celeste-oscuro;
 }
 
 h2{
-    color: #845ec2;
+    color: $color-violeta;
 }

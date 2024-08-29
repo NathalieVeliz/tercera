@@ -4,10 +4,10 @@
     
     width: auto;
     border: 1px solid black;
+
+    &__slider{
+        grid-column: 1/4;
+        background-size: 100%;
+    }
     
-}
-.headerContainer__slider {
-    
-    grid-column: 1/4;
-    background-size: 100%;
 }
