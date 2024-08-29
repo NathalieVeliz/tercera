@@ -1,5 +1,127 @@
+@charset "UTF-8";
+/*Base CSS*/
 * {
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+h1 {
+  color: #338ba7;
+}
+
+h2 {
+  color: #845ec2;
+}
+
+/*HEADER, NAV, SLIDER*/
+.headerContainer {
+  width: auto;
+  border: 1px solid black;
+}
+
+.headerContainer__slider {
+  grid-column: 1/4;
+  background-size: 100%;
+}
+
+/*Sobre nosotros*/
+.mainContainer {
+  display: grid;
+  grid-template-columns: 20% auto auto;
+  grid-template-rows: auto;
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+
+.mainContainer__img {
+  border: 1px solid black;
+  height: 300px;
+}
+
+.mainContainer__content {
+  grid-column: 1/4;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer__sobre {
+  padding: 20px;
+}
+
+/*Servicios */
+.mainContainer__servicios {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.mainContainer__item {
+  padding: 20px;
+}
+
+/*Contacto*/
+.mainContainer__contacto {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.mainContainer__itemContacto {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Ubicación */
+.mainContainer__ubicacion {
+  grid-column: 1/4;
+  padding: 10px 10px;
+}
+
+/*Footer*/
+.footerContainer {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: left;
+  background-color: #338ba7;
+}
+
+.footerContainer__item {
+  width: 200px;
+}
+
+.footerContainer__link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footerContainer__p {
+  color: white;
+  font-weight: 800;
+  font-size: large;
+}
+
+/*Media queries header*/
+@media only screen and (min-width: 52px) and (max-width: 768px) {
+  .mainContainer__img {
+    display: none;
+  }
+}
+/*Media queries main*/
+@media only screen and (min-width: 52px) and (max-width: 768px) {
+  .mainContainer__servicios {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

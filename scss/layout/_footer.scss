@@ -1,0 +1,26 @@
+/*Footer*/
+
+
+.footerContainer{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: left;
+    background-color: #338ba7;
+
+}
+
+.footerContainer__item{
+    width: 200px;
+}
+
+.footerContainer__link {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footerContainer__p {
+    color: white;
+    font-weight: 800;
+    font-size: large;
+}

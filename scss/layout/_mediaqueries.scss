@@ -1,0 +1,22 @@
+/*Media queries header*/
+
+@media only screen and (min-width: 52px) and (max-width: 768px){
+
+  
+
+    .mainContainer__img{
+        display: none;
+    }
+
+}
+
+/*Media queries main*/
+
+@media only screen and (min-width: 52px) and (max-width: 768px){
+
+    .mainContainer__servicios {
+        
+        flex-direction: column;
+    }
+
+}

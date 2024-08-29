@@ -1,0 +1,13 @@
+/*HEADER, NAV, SLIDER*/
+
+.headerContainer{
+    
+    width: auto;
+    border: 1px solid black;
+    
+}
+.headerContainer__slider {
+    
+    grid-column: 1/4;
+    background-size: 100%;
+}

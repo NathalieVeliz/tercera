@@ -1,0 +1,27 @@
+
+/*Sobre nosotros*/
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto;
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+.mainContainer__img {
+    border: 1px solid black;
+    height: 300px;
+}
+
+
+.mainContainer__content {
+    grid-column: 1/4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer__sobre {
+    padding: 20px;
+}

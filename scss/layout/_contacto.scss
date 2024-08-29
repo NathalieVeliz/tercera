@@ -1,0 +1,14 @@
+/*Contacto*/
+
+.mainContainer__contacto {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.mainContainer__itemContacto{
+    display: flex;
+    justify-content: space-between;
+}
