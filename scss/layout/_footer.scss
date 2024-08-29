@@ -2,9 +2,8 @@
 
 
 .footerContainer{
-    padding: 10px 10px;
-    display: flex;
-    justify-content: left;
+    @include flexible( flex , row , wrap ,left, normal );
+    padding: 10px 10px; 
     background-color: #338ba7;
 
 

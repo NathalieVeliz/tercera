@@ -23,7 +23,7 @@ h2 {
   background-size: 100%;
 }
 
-/*Sobre nosotros*/
+/*Main contenedor*/
 .mainContainer {
   display: grid;
   grid-template-columns: 20% auto auto;
@@ -41,7 +41,9 @@ h2 {
   grid-column: 1/4;
   padding: 20px;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
 }
 .mainContainer____sobre {
   padding: 20px;
@@ -49,8 +51,9 @@ h2 {
 .mainContainer__servicios {
   grid-column: 1/4;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: normal;
   padding: 10px 10px 10px 10px;
 }
 .mainContainer__item {
@@ -59,13 +62,16 @@ h2 {
 .mainContainer__contacto {
   grid-column: 1/4;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: space-between;
+  align-items: normal;
   padding: 10px 10px;
 }
 .mainContainer__itemContacto {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: normal;
 }
 .mainContainer__ubicacion {
   grid-column: 1/4;
@@ -74,9 +80,11 @@ h2 {
 
 /*Footer*/
 .footerContainer {
-  padding: 10px 10px;
   display: flex;
+  flex-flow: row wrap;
   justify-content: left;
+  align-items: normal;
+  padding: 10px 10px;
   background-color: #338ba7;
 }
 .footerContainer__item {
@@ -103,6 +111,10 @@ h2 {
 @media only screen and (min-width: 52px) and (max-width: 768px) {
   .mainContainer__servicios {
     flex-direction: column;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
