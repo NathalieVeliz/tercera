@@ -20,4 +20,10 @@
         @include flexible( flex , column , wrap , space-around, center );
     }
 
+    .footerContainer {
+        
+        flex-direction: column;
+        @include flexible( flex , column , wrap , space-around, center );
+    }
+
 }

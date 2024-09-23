@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Base CSS*/
 * {
   margin: 0px;
@@ -13,6 +14,10 @@ h2 {
   color: #845ec2;
 }
 
+h3 {
+  color: #338ba7;
+}
+
 /*HEADER, NAV, SLIDER*/
 .headerContainer {
   width: auto;
@@ -21,6 +26,15 @@ h2 {
 .headerContainer__slider {
   grid-column: 1/4;
   background-size: 100%;
+}
+
+/*Color menú hamburguesa*/
+.nav-item a {
+  color: black !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(128, 0, 128, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 /*Main contenedor*/
@@ -78,17 +92,38 @@ h2 {
   padding: 10px 10px;
 }
 
+/*Buton up*/
+.go-top-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  display: none;
+  justify-content: center;
+  align-content: center;
+  border: 0;
+  background: transparent;
+}
+
+.go-top-btn img {
+  height: 50px;
+  width: 50px;
+}
+
 /*Footer*/
 .footerContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
+  justify-content: space-around;
   align-items: normal;
   padding: 10px 10px;
   background-color: #338ba7;
-}
-.footerContainer__item {
-  width: 200px;
+  /*
+      &__item{
+          width: 200px;
+      } */
 }
 .footerContainer__link {
   color: white;
@@ -110,6 +145,13 @@ h2 {
 /*Media queries main*/
 @media only screen and (min-width: 52px) and (max-width: 768px) {
   .mainContainer__servicios {
+    flex-direction: column;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footerContainer {
     flex-direction: column;
     display: flex;
     flex-flow: column wrap;

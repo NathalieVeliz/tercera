@@ -2,14 +2,14 @@
 
 
 .footerContainer{
-    @include flexible( flex , row , wrap ,left, normal );
+    @include flexible( flex , row , wrap ,space-around, normal );
     padding: 10px 10px; 
     background-color: #338ba7;
 
-
+/*
     &__item{
         width: 200px;
-    }
+    } */
 
     &__link {
         color: white;
